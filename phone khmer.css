@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+.top_box{
+    width: 100%;
+    height: auto;
+    background-image: url("book\ photo/BG LOGO.jpg");
+    display: flex;
+    background-position: center;
+    justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Logo{
+    width: 30%;
+    height: auto;
+}
+.Logo>img{
+    width: 100%;
+    height: auto;
+}
+.log{
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log button{
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(90deg, #5c0067, #00d4ff);
+    border: none;
+    color: white;
+    font-size: 1vw;
+    padding: 6px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.heading{
+    width: 32%;
+    height: auto;
+}
+.heading p{
+    font-family: "Moulpali", sans-serif;  
+    font-size: 2.2vw;
+    color: aliceblue;
+    padding-top: 1.5vw;
+    display: flex;
+    justify-content: center;
+}
+/* .cover{
+    margin: 0.5vw;
+} */
+.cover>.mar-top{
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+    font-family: "Suwannaphum", serif;
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #5c0067;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.navbar a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+    padding: 15px 40px;
+    transition: 0.8s;
+    font-size: 1.3vw;
+    font-family: "Fasthand", cursive;
+}
+.navbar a:hover{
+    background-color: rgb(165, 196, 255);
+    transition: 0.8s;
+}
+.navbar li:hover .dropdown{
+    display: block;
+    transition: 0.8s;
+}
+.dropdown{
+    display: none;
+}
+.dropdown ul{
+    flex-direction: column;
+    position: absolute;
+    background-color: #5c0067;
+}
+.box:hover{
+    background-color: rgb(165, 196, 255);
+    transition: 0.5s;
+}
+.flag{
+    display: flex;
+    flex-direction: row;
+}
+.flag img{
+    width: 3vw;
+    height: auto;
+}
+.caption{
+    background-color: #8D5F8C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0%;
+    font-family: "Bokor", system-ui;
+}
+.coming-soon{
+    background-color: #8D5F8C;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.coming-soon img{
+    border-radius: 100px;
+    box-shadow: 5px 5px 5px 5px rgb(255, 255, 255);
+    width: 90%;
+    height: auto;
+    margin-bottom: 36px;
+}
+.other-box{
+    background-color: #8D5F8C;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.other-box p{
+    font-size: 1.2vw;
+    font-family: "Battambang", system-ui;
+}
+.other-box>.box1:hover{
+    background-color: rgb(165, 196, 255);
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px 5px #3B0270;
+    margin-top: 2%;
+}
+.other-box>.box1{
+    width: 16%;
+    height: auto;
+    background-color: white;
+    margin-top: 0;
+    margin: 20px;
+    display: flex;
+    border-radius: 20px;
+    padding: 1vw;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.phone>img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+}
+.navbar{
+    font-size: 20px;
+    font-family: Ah facon;   
+}
+.up{
+    position: fixed;
+    bottom: 6vh;
+    right: 2vh;
+    background-color: #5c0067;
+    border: none;
+    border-radius: 30%;
+    padding: 1vw 1vw;
+    cursor: pointer;
+    font-size: 1vw;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+.fa-solid{
+    font-size: 2vw; 
+}
+.mar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 1.2vw;
+    background-color: #5c0067;
+    color: white;
+    font-family: "Chenla", system-ui;
+}
+.footer {
+    background-color: #3E1E68;
+    color: white;
+    padding: 50px 60px;
+    font-family: "Battambang", system-ui;
+    font-size: 1.3vw;
+    display: block;
+    unicode-bidi: isolate;
+}
+.footer ul li a{
+    color: white;
+}
+.footer-container {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social img{
+    width: 1.5vw;
+}
+.social a{
+    color: white;
+}
+
+/* Tablet */
+@media(max-width:1279px) and (min-width: 481px){
+    .top_box{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Logo{
+        width: 30%;
+        height: auto;
+    }
+    .logo img{
+        width: 90%;
+        height: auto;
+    }
+    .log{
+        width: 30%;
+        height: auto;
+    }
+    .log button{
+        font-family: 'Orbitron', sans-serif;
+        background: linear-gradient(90deg, #5c0067, #00d4ff);
+        border: none;
+        color: white;
+        font-size: 1vw;
+        padding: 3px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .heading{
+        width: 32%;
+        height: auto;
+    }
+    .heading p{
+        font-family: Ah facon;   
+        font-size: 2.5vw;
+        color: aliceblue;
+        padding-top: 8%;
+      
+        display: flex;
+        justify-content: center;
+    }
+    .other-box{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .other-box p{
+        font-size: 1vw;
+    }
+    .other-box .box1{
+        width: 22%;
+    }
+    .navbar a{
+        padding: 6px 10px;
+        font-size: 1.5vw;
+    }
+    .fa-solid{
+        font-size: 1.5vw; 
+    }
+    .flag img{
+        width: 24px;
+        height: auto;
+    }
+    .cover{
+        margin: 2px;
+    }
+    .cover>.mar-top{
+        font-size: 12px;
+    }
+    .caption{
+        font-size: 2vw;
+    }
+    .mar{
+        font-size: 12px;
+    }
+    .up{
+        position: fixed;
+        bottom: 6vh;
+        right: 2vh;
+        background-color: #5c0067;
+        border: none;
+        border-radius: 30%;
+        padding: 0.5vw 0.5vw;
+        cursor: pointer;
+        font-size: 1vw;
+        color: black;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+}
+
+/* phone */
+@media(max-width:480px){
+     .top_box{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Logo{
+        width: 30%;
+        height: auto;
+    }
+    .logo img{
+        width: 90%;
+        height: auto;
+    }
+    .log{
+        width: 30%;
+        height: auto;
+    }
+    .log button{
+        font-family: 'Orbitron', sans-serif;
+        background: linear-gradient(90deg, #5c0067, #00d4ff);
+        border: none;
+        color: white;
+        font-size: 1vw;
+        padding: 3px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        display: flex;
+        align-items: center;
+    }
+    .heading{
+        width: 32%;
+        height: auto;
+    }
+    .heading p{
+        font-family: Ah facon;   
+        font-size: 2.5vw;
+        color: aliceblue;
+        padding-top: 8%;
+      
+        display: flex;
+        justify-content: center;
+    }
+    .other-box{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .other-box p{
+        font-size: 1vw;
+    }
+    .other-box .box1{
+        width: 30%;
+    }
+    .navbar a{
+        padding: 6px 10px;
+        font-size: 1.5vw;
+    }
+    .navbar2{
+        display: none;
+    }
+    .fa-solid{
+        font-size: 1.5vw; 
+    }
+    .flag img{
+        width: 2.5vw;
+        height: auto;
+    }
+    .cover{
+        margin: 2px;
+    }
+    .cover>.mar-top{
+        font-size: 2vw;
+    }
+    .caption{
+        font-size: 2vw;
+    }
+    .mar{
+        font-size: 1.5vw;
+    }
+    .up{
+        position: fixed;
+        bottom: 6vh;
+        right: 2vh;
+        background-color: #5c0067;
+        border: none;
+        border-radius: 30%;
+        padding: 1vw 1vw;
+        cursor: pointer;
+        font-size: 1vw;
+        color: black;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+}
